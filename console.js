@@ -5,7 +5,7 @@ if (document.getElementById("console") != null) {
           log(...args)
           const li = document.createElement('li');
           li.innerText = args[0];
-          document.getElementById('console').appendChild(li);
+          document.getElementById('console').appendChild(JSON.stringify(li));
         }
         console.clear = function(){
           document.getElementById('console').innerHTML = "";
