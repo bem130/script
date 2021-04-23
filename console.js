@@ -10,10 +10,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
-          $("<span style='color:red'>").html(args);
-          const li = document.createElement('li');
-          li.innerText = args[0];
-          document.getElementById('console').appendChild(li);
+          console.log(...args)
         }
       })()
 }
