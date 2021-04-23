@@ -1,3 +1,4 @@
+
 if (document.getElementById("console") != null) {
     (function(){
         console.log = function(args){
