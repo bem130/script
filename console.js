@@ -1,8 +1,7 @@
 if (document.getElementById("console") != null) {
     (function(){
-        const log = console.log;
+      const log = console.log
         console.log = function(...args){
-          log(...args);
           const li = document.createElement('li');
           li.innerText = args[0];
           document.getElementById('console').appendChild(li);
@@ -11,7 +10,10 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
-          console.log(...args)
+          $("<span style='color:red'>").html(args);
+          const li = document.createElement('li');
+          li.innerText = args[0];
+          document.getElementById('console').appendChild(li);
         }
       })()
 }
