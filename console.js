@@ -1,8 +1,8 @@
 if (document.getElementById("console") != null) {
     (function(){
       const log = console.log;
-      const error = console.log;
         console.log = function(...args){
+          log(...args)
           const li = document.createElement('li');
           li.innerText = args[0];
           document.getElementById('console').appendChild(li);
@@ -11,10 +11,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
-          const li = document.createElement('li');
-          li.innerText = args[0];
-          document.getElementById('console').innerHTML += "エラー" + JSON.stringify(li);
-        }
+          console.log(...args)
       })()
 }
 else {
