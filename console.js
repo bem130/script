@@ -1,7 +1,7 @@
 if (document.getElementById("console") != null) {
     (function(){
       const log = console.log;
-      const error = console.error;
+      const error = console.log;
         console.log = function(...args){
           log(...args)
           const li = document.createElement('li');
@@ -15,7 +15,7 @@ if (document.getElementById("console") != null) {
           error(...args)
           const li = document.createElement('li');
           li.innerText = args[0];
-          document.getElementById('console').appendChild("エラー" + li);
+          document.getElementById('console').appendChild(JSON.parse("エラー") + li);
         }
       })()
 }
