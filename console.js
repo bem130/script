@@ -11,15 +11,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
-          console.log(typeof(args))
-          log(args)
-          args = JSON.parse("<span style='color:rgba(255,0,0,1)'>" + args + "</span>");
-          args = args;
-          console.log(typeof(args))
-          log(...args);
-          const li = document.createElement('li');
-          li.innerText = args[0];
-          document.getElementById('console').appendChild(li);
+          console.log(...args)
         }
       })()
 }
