@@ -1,9 +1,7 @@
 if (document.getElementById("console") != null) {
     (function(){
         console.log = function(args){
-          const li = document.createElement('li');
-          li.innerText = args[0];
-          document.getElementById('console').innerHTML += li + "<br>";
+          document.getElementById('console').innerHTML += args + "<br>";
         }
         console.clear = function(){
           document.getElementById('console').innerHTML = "";
