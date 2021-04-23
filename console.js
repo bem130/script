@@ -13,6 +13,7 @@ if (document.getElementById("console") != null) {
         console.error = function(...args){
           args = "<span style='color:rgba(255,0,0,1)'>" + args + "</span>";
           args = args;
+          console.log(typeof(args))
           log(...args);
           const li = document.createElement('li');
           li.innerText = args[0];
