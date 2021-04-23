@@ -3,11 +3,7 @@ if (document.getElementById("console") != null) {
         const log = console.log;
         const clear = console.clear;
         const error = console.error;
-        console.log = function(...args,style){
-          if (style != null) {
-            style = ""
-          }
-          args = "<span style="+style+">" + args + "</span>";
+        console.log = function(...args){
           log(...args);
           const li = document.createElement('li');
           li.innerText = args[0];
@@ -19,7 +15,8 @@ if (document.getElementById("console") != null) {
           li.innerText = args[0];
           document.getElementById('console').innerHTML = "";
         }
-        console.error = function(...args,style){
+        console.error = function(...args){
+          args = "<span style='color:rgba(255,0,0,1)'>" + args + "</span>";
           args = args;
           error(...args);
           const li = document.createElement('li');
