@@ -15,7 +15,7 @@ if (document.getElementById("console") != null) {
           error(...args)
           const li = document.createElement('li');
           li.innerText = args[0];
-          document.getElementById('console').appendChild(JSON.parse("エラー") + li);
+          document.getElementById('console').appendChild(JSON.stringify("エラー") + li);
         }
       })()
 }
