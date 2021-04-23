@@ -13,6 +13,9 @@ if (document.getElementById("console") != null) {
         console.error = function(...args){
           console.log(...args)
         }
+        console.warn = function(...args){
+          console.log(...args)
+        }
       })()
 }
 else {
