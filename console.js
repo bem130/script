@@ -12,6 +12,7 @@ if (document.getElementById("console") != null) {
         }
         console.error = function(...args){
           console.log(typeof(args))
+          log(args)
           args = JSON.parse("<span style='color:rgba(255,0,0,1)'>" + args + "</span>");
           args = args;
           console.log(typeof(args))
