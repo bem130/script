@@ -1,4 +1,4 @@
-console.log('console.js', "background:rgba(0,255,255,1)");
+console.log('--console.js--');
 
 if (document.getElementById("console") != null) {
     (function(){
