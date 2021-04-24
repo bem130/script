@@ -5,7 +5,7 @@ if (document.getElementById("console") != null) {
       const warn = console.warn;
         console.log = function(...args){
           log(...args)
-          document.getElementById('console').innerHTML += "<span style='color:brack'>　  " + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:white'>　  " + args + "</span><br>";
         }
         console.clear = function(){
           document.getElementById('console').innerHTML = "";
@@ -19,7 +19,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
         }
         console.message = function(...args){
-          document.getElementById('console').innerHTML += "<span style='color:brack'>　  " + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:white'>　  " + args + "</span><br>";
           log(...args)
         }
       })()
