@@ -3,9 +3,8 @@
   console.message = function(args){
     const spacing = '10px'
     const styles = `padding: ${spacing}; background-color: white; color: red; font-style: italic; border: 1px solid black; font-size: 2em;`;
-    log(args, styles);
     document.getElementById('console').innerHTML += "　  " + args + "<br>";
-    console.log(log)
+    console.log()
   }
 })()
 
@@ -28,6 +27,10 @@ if (document.getElementById("console") != null) {
         console.warn = function(...args){
           warn(args)
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
+        }
+        console.message = function(args){
+          document.getElementById('console').innerHTML += "　  " + args + "<br>";
+          log(args)
         }
       })()
 }
