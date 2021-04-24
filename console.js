@@ -3,8 +3,8 @@ if (document.getElementById("console") != null) {
       const log = console.log;
       const error = console.error;
       const warn = console.warn;
-        console.log = function(args){
-          log(args)
+        console.log = function(...args){
+          log(...args)
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
         }
         console.clear = function(){
@@ -18,9 +18,9 @@ if (document.getElementById("console") != null) {
           warn(args)
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
         }
-        console.message = function(args){
+        console.message = function(...args){
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
-          log(args)
+          log(...args)
         }
       })()
 }
