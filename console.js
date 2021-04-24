@@ -2,6 +2,7 @@
 if (document.getElementById("console") != null) {
     (function(){
         console.log = function(args){
+          console.log(args)
           document.getElementById('console').innerHTML += args + "<br>";
         }
         console.clear = function(){
