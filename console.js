@@ -1,4 +1,11 @@
 
+(function(){
+  const log = console.log;
+  console.message = function(args){
+    log('%cI am a styled log', `padding: 10px; background-color: white; color: red; font-style: italic; border: 1px solid black; font-size: 2em;`);
+  }
+})()
+
 if (document.getElementById("console") != null) {
     (function(){
       const log = console.log;
@@ -24,3 +31,6 @@ if (document.getElementById("console") != null) {
 else {
     console.warn("'console' tag not found");
 }
+
+
+console.log()
