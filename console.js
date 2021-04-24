@@ -3,6 +3,7 @@
   const log = console.log;
   console.message = function(args){
     log('%cI am a styled log', `padding: 10px; background-color: white; color: red; font-style: italic; border: 1px solid black; font-size: 2em;`);
+    document.getElementById('console').innerHTML += "　  " + args + "<br>";
   }
 })()
 
