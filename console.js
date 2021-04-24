@@ -21,7 +21,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
         }
         console.message = function(...args){
-          document.getElementById('console').innerHTML += "<span style='color:white'>　  " + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:blue'>　  " + args + "</span><br>";
           log(...args)
         }
       })()
