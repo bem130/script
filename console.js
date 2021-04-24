@@ -19,7 +19,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
         }
         console.message = function(...args){
-          document.getElementById('console').innerHTML += "<span style='color:blue'>　  " + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color: rgba(0,10,255,0.1)'>　  " + args + "</span><br>";
           log(...args)
         }
       })()
