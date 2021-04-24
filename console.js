@@ -13,7 +13,7 @@ if (document.getElementById("console") != null) {
         }
         console.error = function(...args){
           error(args)
-          document.getElementById('console').innerHTML += "<span style='color=red'>" + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:red'>" + args + "</span><br>";
         }
         console.warn = function(...args){
           warn(args)
