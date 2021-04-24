@@ -20,7 +20,7 @@ if (document.getElementById("console") != null) {
         }
         console.message = function(...args){
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
-          console.log(...args)
+          log(...args)
         }
       })()
 }
