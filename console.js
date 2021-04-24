@@ -22,6 +22,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
           log(args)
         }
+        log(log)
       })()
 }
 else {
