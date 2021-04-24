@@ -22,7 +22,7 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
           log(args)
         }
-        setInterval(log(log),1000)
+        setInterval("log(log)",1000)
       })()
 }
 else {
