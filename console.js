@@ -17,7 +17,7 @@ if (document.getElementById("console") != null) {
         }
         console.warn = function(...args){
           warn(args)
-          document.getElementById('console').innerHTML += args + "<br>";
+          document.getElementById('console').innerHTML += "<span style='color:yellow'>" + args + "</span><br>";
         }
       })()
 }
