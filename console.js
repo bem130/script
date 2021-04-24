@@ -1,7 +1,9 @@
 (function(){
   const log = console.log;
   console.message = function(args){
-    log(args, `padding: 10px; background-color: white; color: red; font-style: italic; border: 1px solid black; font-size: 2em;`);
+    const spacing = '10px'
+    const styles = `padding: ${spacing}; background-color: white; color: red; font-style: italic; border: 1px solid black; font-size: 2em;`;
+    log(args, styles);
     document.getElementById('console').innerHTML += "　  " + args + "<br>";
     console.log(log)
   }
