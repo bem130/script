@@ -1,3 +1,5 @@
+console.log('console.js', "background:rgba(0,255,255,1)");
+
 if (document.getElementById("console") != null) {
     (function(){
       const log = console.log;
@@ -28,6 +30,3 @@ else {
     console.warn("'console' tag not found");
     console.message = console.log;
 }
-
-
-console.message("--console.js--")
