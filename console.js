@@ -1,7 +1,9 @@
 
 if (document.getElementById("console") != null) {
     (function(){
-      const log = console.log
+      const log = console.log;
+      const error = console.error;
+      const warn = console.warn;
         console.log = function(args){
           log(args)
           document.getElementById('console').innerHTML += args + "<br>";
@@ -10,10 +12,12 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
-          console.log(...args);
+          error(args)
+          document.getElementById('console').innerHTML += args + "<br>";
         }
         console.warn = function(...args){
-          console.log(...args);
+          warn(args)
+          document.getElementById('console').innerHTML += args + "<br>";
         }
       })()
 }
