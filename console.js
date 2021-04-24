@@ -19,8 +19,8 @@ if (document.getElementById("console") != null) {
           document.getElementById('console').innerHTML += "<span style='color:yellow'>　! " + args + "</span><br>";
         }
         console.message = function(...args){
-          document.getElementById('console').innerHTML += "　  " + args + "<br>";
-          log(...args)
+          document.getElementById('console').innerHTML += "　  " + args[0] + "<br>";
+          log(args[0],args[1])
         }
       })()
 }
