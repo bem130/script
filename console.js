@@ -4,7 +4,7 @@ if (document.getElementById("console") != null) {
       const error = console.error;
       const warn = console.warn;
         console.log = function(...args){
-          log(...args)
+          log(args[0],args[1])
           document.getElementById('console').innerHTML += "　  " + args + "<br>";
         }
         console.clear = function(){
