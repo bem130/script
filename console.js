@@ -6,18 +6,18 @@ if (document.getElementById("console") != null) {
       const warn = console.warn;
         console.log = function(args){
           log(args)
-          document.getElementById('console').innerHTML += args + "<br>";
+          document.getElementById('console').innerHTML += "  " + args + "<br>";
         }
         console.clear = function(){
           document.getElementById('console').innerHTML = "";
         }
         console.error = function(...args){
           error(args)
-          document.getElementById('console').innerHTML += "<span style='color:red'>" + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:red'>  " + args + "</span><br>";
         }
         console.warn = function(...args){
           warn(args)
-          document.getElementById('console').innerHTML += "<span style='color:yellow'>" + args + "</span><br>";
+          document.getElementById('console').innerHTML += "<span style='color:yellow'>  " + args + "</span><br>";
         }
       })()
 }
