@@ -1,8 +1,9 @@
 
 if (document.getElementById("console") != null) {
     (function(){
+      const log = console.log
         console.log = function(args){
-          console.log(args)
+          log(args)
           document.getElementById('console').innerHTML += args + "<br>";
         }
         console.clear = function(){
