@@ -1,5 +1,3 @@
-console.log('--console.js--');
-
 if (document.getElementById("console") != null) {
     (function(){
       const log = console.log;
@@ -30,3 +28,4 @@ else {
     console.warn("'console' tag not found");
     console.message = console.log;
 }
+console.log('--console.js--');
