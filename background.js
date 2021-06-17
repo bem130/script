@@ -1,4 +1,4 @@
-/*! background.js v2.0.0 June 15, 2021 | https://haruki1234.github.io | https://github.com/haruki1234 */
+/*! background.js v2.0.0 June 17, 2021 | https://haruki1234.github.io | https://github.com/haruki1234 */
 
 /*
 <div class="background" style="position: absolute;left: 0px;top: 0px;z-index: -1000;width: 100vw;height: 100vh;margin: 0;padding: 0;position: fixed;"></div>
